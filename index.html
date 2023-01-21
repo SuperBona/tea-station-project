@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tea Station || Home</title>
+    <link
+      rel="stylesheet"
+      href="./tea-station-project/setup-files-html-css-tea-station-new-design/fontawesome-free-5.12.1-web/css/all.css"
+    />
+    <link rel="stylesheet" href="./tea-station-project/css/styles.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <!-- NAV BUTTON -->
+    <span class="nav-btn" id="nav-btn">
+      <!-- per aggiungere javascript serve avere un id -->
+      <i class="fas fa-bars"></i>
+    </span>
+    <!-- ora devo creare il menu verticale che si apre cliccando. gli id collegati a js permettono di aprire e chiudere -->
+    <nav class="navbar" id="navbar">
+      <div class="navbar-header">
+        <span class="nav-close" id="nav-close">
+          <i class="fas fa-times"></i>
+        </span>
+      </div>
+      <ul class="nav-items">
+        <a href="index.html" class="nav-link"><li>home</li></a>
+        <a href="skills.html" class="nav-link"><li>skills</li></a>
+        <a href="about.html" class="nav-link"><li>about</li></a>
+        <a href="products.html" class="nav-link"><li>products</li></a>
+      </ul>
+      <!-- ora questi elementi si sono piazzati sopra a tutto il progetto, serve css -->
+    </nav>
+    <!-- end of nav button -->
+    <!-- HEADER -->
+    <header class="header">
+      <div class="banner">
+        <h2>Over one hundred flavors of</h2>
+        <h1>
+          specially <br />
+          crafted tea
+        </h1>
+        <!-- classe generica btn per tutti, e classe specifica per questo btn -->
+        <a href="skills.html" class="btn banner-btn">explore</a>
+      </div>
+    </header>
+    <!-- end of header -->
+    <div class="content-divider"></div>
+    <!-- SKILLS SECTION -->
+    <section class="skills clearfix">
+      <!-- SINGLE SKILL -->
+      <article class="skill">
+        <span class="skill-icon"><i class="fas fa-mug-hot"></i></span>
+        <h4 class="skill-title">made in italy</h4>
+        <p class="skill-text">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, eaque!
+        </p>
+      </article>
+      <!-- end of single skill -->
+      <!-- SINGLE SKILL -->
+      <article class="skill">
+        <span class="skill-icon"><i class="fas fa-glass-cheers"></i></span>
+        <h4 class="skill-title">relaxation</h4>
+        <p class="skill-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus,
+          laudantium.
+        </p>
+      </article>
+      <!-- end of single skill -->
+      <!-- SINGLE SKILL -->
+      <article class="skill">
+        <span class="skill-icon"><i class="fas fa-bomb"></i></span>
+        <h4 class="skill-title">energy</h4>
+        <p class="skill-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, quis.
+        </p>
+      </article>
+      <!-- end of single skill -->
+      <!-- SINGLE SKILL -->
+      <article class="skill">
+        <span class="skill-icon"><i class="fas fa-mortar-pestle"></i></span>
+        <h4 class="skill-title">family recipe</h4>
+        <p class="skill-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, cum?
+        </p>
+      </article>
+      <!-- end of single skill -->
+    </section>
+    <!-- end of skills section -->
+    <!-- ABOUT -->
+    <section>
+      <!-- da qui in poi verranno riutilizzate certe proprietà css per specifici elementi che si riutilizzeranno quindi meglio assegnare loro la stessa global class -->
+      <!-- serve un altro clearfix element perchè dopo qui dentro metto elementi con float, e gli elementi nuovi che si piazzeranno dopo quelli con float non ne verranno
+      influenzati -->
+      <div class="section-center clearfix">
+        <!-- ABOUT IMG -->
+        <!-- l'immagine avrà un'effetto (scale) per cui si ingrandisce con :hover ma rimane contenuta dentro un border, senza fuoriuscire, quindi da effetto zoom in
+        ecco come dividere gli elementi che servono per fare ciò -->
+        <article class="about-img">
+          <div class="about-picture-container">
+            <!-- l'immagine è già adattata grazie ai global css -->
+            <img
+              src="./tea-station-project/setup-files-html-css-tea-station-new-design/images/about-bcg.jpeg"
+              alt="tea kettle"
+              class="about-picture"
+            />
+          </div>
+        </article>
+        <!-- ABOUT INFO -->
+        <article class="about-info">
+          <!-- SECTION TITLE -->
+          <div class="section-title">
+            <h3>about our</h3>
+            <h2>tea station</h2>
+          </div>
+          <!-- end of section title -->
+          <p class="about-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+            consequuntur vero cupiditate. Veniam, perspiciatis culpa?
+          </p>
+          <p class="about-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+            consequuntur vero cupiditate. Veniam, perspiciatis culpa?
+          </p>
+          <a href="about.html" class="btn">learn more</a>
+        </article>
+      </div>
+    </section>
+    <!-- end of about -->
+    <!-- PRODUCTS SECTION -->
+    <!-- si crea un nested column layout, una colonna per le info e una più grande per i 3 prodotti, con 3 colonne separate per ciasuno. confronto la sezione about con questa  -->
+    <section class="products">
+      <!-- ogni sezione da quella about deve avere stessa width, quindi mi serve la glasse globale già usata. clearfix verrà usato più volte perchè creo più colonne -->
+      <div class="section-center clearfix">
+        <!-- PRODUCTS INFO -->
+        <article class="products-info">
+          <!-- copio la section title dell'about, tanto la classe che ci serve è quella, per le proprietà comuni -->
+          <!-- SECTION TITLE -->
+          <div class="section-title">
+            <h3>check out</h3>
+            <h2>our products</h2>
+          </div>
+          <!-- end of section title -->
+          <p class="product-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,
+            delectus vero alias ullam dignissimos dolorem voluptatibus molestiae
+            aspernatur aliquam error suscipit at aliquid maxime quae.
+          </p>
+          <a href="products.html" class="btn">inventory</a>
+        </article>
+        <!-- PRODUCTS INVENTORY -->
+        <article class="products-inventory clearfix">
+          <!-- questo products-inventory che fa da colonna conterrà altre 3 colonne, quindi anche qui ci serve clearfix class, con float -->
+          <!-- SINGLE PRODUCT -->
+          <div class="product">
+            <img
+              src="./tea-station-project/setup-files-html-css-tea-station-new-design/images/product-1.jpeg"
+              alt="single product"
+              class="product-img"
+            />
+            <h4 class="product-title">ginger peach tea</h4>
+            <h4 class="product-price">$6.99</h4>
+          </div>
+          <!-- end of single product -->
+          <!-- SINGLE PRODUCT -->
+          <div class="product">
+            <img
+              src="./tea-station-project/setup-files-html-css-tea-station-new-design/images/product-2.jpeg"
+              alt="single product"
+              class="product-img"
+            />
+            <h4 class="product-title">fruit sangria</h4>
+            <h4 class="product-price">$6.99</h4>
+          </div>
+          <!-- end of single product -->
+          <!-- SINGLE PRODUCT -->
+          <div class="product">
+            <img
+              src="./tea-station-project/setup-files-html-css-tea-station-new-design/images/product-3.jpeg"
+              alt="single product"
+              class="product-img"
+            />
+            <h4 class="product-title">white tea</h4>
+            <h4 class="product-price">$6.99</h4>
+          </div>
+          <!-- end of single product -->
+          <!-- le immagini sono già responsive grazie alle proprietà, width 100% -->
+        </article>
+      </div>
+    </section>
+    <!-- end of products section -->
+    <!-- SERVICES SECTION -->
+    <!-- layout su 3 colonne, cards. clearfix già usato prima ::after -->
+    <section class="services">
+      <!-- SECTION TITLE -->
+      <!-- mantengo stile già dato a section-title ma aggiungo altro a sè con services-title come classi -->
+      <div class="section-title services-title">
+        <h3>explore</h3>
+        <h2>our services</h2>
+      </div>
+      <!-- end of section title -->
+      <div class="section-center clearfix">
+        <!-- multi column layout -->
+        <!-- SINGLE CARD -->
+        <article class="service-card">
+          <!-- l'immagine si troverà in un elemento container, perchè questo verrà usato per piazzare l'icona su di questa, in basso -->
+          <!-- IMG CONTAINER -->
+          <div class="service-img-container">
+            <!-- IMG -->
+            <img
+              src="./tea-station-project/setup-files-html-css-tea-station-new-design/images/product-1.jpeg"
+              class="service-img"
+              alt="single service"
+            />
+            <!-- SERVICE ICON -->
+            <span class="service-icon">
+              <!-- le icone dovranno avere le stesse proprietà delle altre già usate -->
+              <i class="fas fa-mortar-pestle fa-fw"></i>
+            </span>
+          </div>
+          <!-- SERVICE INFO -->
+          <div class="service-info">
+            <h4>custom recipes</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Temporibus nostrum accusantium quo minima tempore in?
+            </p>
+            <a href="products.html" class="btn service-btn">read more</a>
+          </div>
+        </article>
+        <!-- end of single card -->
+        <!-- SINGLE CARD -->
+        <article class="service-card">
+          <!-- IMG CONTAINER -->
+          <div class="service-img-container">
+            <!-- IMG -->
+            <img
+              src="./tea-station-project/setup-files-html-css-tea-station-new-design/images/product-2.jpeg"
+              class="service-img"
+              alt="single service"
+            />
+            <!-- SERVICE ICON -->
+            <span class="service-icon">
+              <i class="fas fa-home fa-fw"></i>
+            </span>
+          </div>
+          <!-- SERVICE INFO -->
+          <div class="service-info">
+            <h4>home delivery</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Temporibus nostrum accusantium quo minima tempore in?
+            </p>
+            <a href="products.html" class="btn service-btn">read more</a>
+          </div>
+        </article>
+        <!-- end of single card -->
+        <!-- SINGLE CARD -->
+        <article class="service-card">
+          <!-- IMG CONTAINER -->
+          <div class="service-img-container">
+            <!-- IMG -->
+            <img
+              src="./tea-station-project/setup-files-html-css-tea-station-new-design/images/product-3.jpeg"
+              class="service-img"
+              alt="single service"
+            />
+            <!-- SERVICE ICON -->
+            <span class="service-icon">
+              <i class="fas fa-mug-hot fa-fw"></i>
+            </span>
+          </div>
+          <!-- SERVICE INFO -->
+          <div class="service-info">
+            <h4>tea aging</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Temporibus nostrum accusantium quo minima tempore in?
+            </p>
+            <a href="products.html" class="btn service-btn">read more</a>
+          </div>
+        </article>
+        <!-- end of single card -->
+      </div>
+    </section>
+    <!-- end of services section -->
+    <!-- CONTACTS SECTION -->
+    <!-- si lavora su un layout a 2 colonne, indirizzi e contatto/form -->
+    <section class="contact">
+      <div class="section-center clearfix">
+        <!-- CONTACT INFO -->
+        <article class="contact-info">
+          <!-- CONTACT ITEM -->
+          <div class="contact-item">
+            <h4 class="contact-title">
+              <span class="contact-icon"
+                ><i class="fas fa-location-arrow"></i
+              ></span>
+              adress
+            </h4>
+            <h4 class="contact-text">523 Via Cafoni<br />Napoli, NA 00000</h4>
+          </div>
+          <!-- end of contact item -->
+          <!-- CONTACT ITEM -->
+          <div class="contact-item">
+            <h4 class="contact-title">
+              <span class="contact-icon"><i class="fas fa-envelope"></i></span>
+              email
+            </h4>
+            <h4 class="contact-text">email@email.com</h4>
+          </div>
+          <!-- end of contact item -->
+          <!-- CONTACT ITEM -->
+          <div class="contact-item">
+            <h4 class="contact-title">
+              <span class="contact-icon"><i class="fas fa-phone"></i></span>
+              telephone
+            </h4>
+            <h4 class="contact-text">+123 456 789</h4>
+          </div>
+          <!-- end of contact item -->
+        </article>
+        <!-- end of contact info -->
+        <!-- CONTACT FORM -->
+        <article class="contact-form">
+          <h3>contact us</h3>
+          <form action="" method="post">
+            <div class="form-group">
+              <!-- inputs -->
+              <input
+                type="text"
+                placeholder="name"
+                class="form-control"
+                name="name"
+              />
+              <input
+                type="email"
+                placeholder="email"
+                class="form-control"
+                name="email"
+              />
+              <textarea
+                name="message"
+                placeholder="message"
+                class="form-control"
+                rows="5"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn btn">submit here</button>
+          </form>
+        </article>
+        <!-- end of contact form -->
+      </div>
+    </section>
+    <!-- end of contacts section -->
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+      <div class="section-center">
+        <!-- inserisco due sezioni, le icone e il testo -->
+        <div class="social-icons">
+          <!-- SOCIAL ICON -->
+          <a href="#" class="social-icon">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <!-- end of social icon -->
+          <!-- SOCIAL ICON -->
+          <a href="#" class="social-icon">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <!-- end of social icon -->
+          <!-- SOCIAL ICON -->
+          <a href="#" class="social-icon">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <!-- end of social icon -->
+        </div>
+        <h4 class="footer-text">
+          <!-- per cambiare l'anno a ogni anno senza dover tornare sul progetto manualmente, si può usare javscript, e si lavora con l'id -->
+          &copy; <span>2023</span>
+          <span class="company">tea station</span>
+          All rights reserved
+        </h4>
+      </div>
+    </footer>
+    <!-- end of footer section -->
+    <!-- ora torno su alla navbar per creare il btn speciale fixed e dinamico. servirà javascript, ma è già scritto in quel file -->
+    <!-- IL CODICE è legato a JAVASCRIPT -->
+    <script src="./tea-station-project/setup-files-html-css-tea-station-new-design/app.js"></script>
+  </body>
+</html>
+
+<!-- qui è fatto -->
+<!-- se compilo il campo contact us e invio, la pagina si ricarica, perchè i dati non vengono inviati da nessuna parte. si può usare il sito Formspree, gratis,
+permette di ottenere i dati inseriti nella mia email. bisogna registrarsi e permette di creare i form.
+faccio "crea nuovo form", gli do un nome e l'email a cui deve essere inviato. dopo averlo creato viene dato un "end point" che devo copiare e aggiungere in html,
+nell'attributo "action" del form, con il method="post" -->
+<!-- quando ora faccio submit, si aprirà una nuova pagina di formspree che conferma di aver inviato i dati, e a noi arriva un'email, ma posso anche vederla sulla
+mia pagina formspree sulla sezione "submissions" -->
+
+<!-- Netlify serve per l'hosting, gratis, ci si registra con l'email.
+importante è "add new site", dove posso importare un progetto già esistente. iniziare da un template o inserirlo manualmente -->
+<!-- per importare il file serve github
+faccio "deploy manually" e si carica un sito Drag and Drop con una finestra in cui caricare tutta la cartella html, css, js. basta che prendo tutto il progetto
+ci viene dato un url random e per cambiarlo basta andare nelle impostazioni del sito, site details, change site name
+l'utl terminerà con netlify.app -->
+<!-- il progetto è online -->
